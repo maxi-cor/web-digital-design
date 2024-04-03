@@ -1,4 +1,5 @@
-import Navbrowser from "../../components/Navbrowser/Navbrowser"
+import Navbrowser from "../../components/Navbrowser/Navbrowser";
+import './Home.css'
 
 export default function Home() {
     return (

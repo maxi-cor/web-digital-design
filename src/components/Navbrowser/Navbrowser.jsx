@@ -1,34 +1,28 @@
 import { NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import './Navbrowser.css';
 
 export default function Navbrowser(){
     return (
-        <div className='container-all-nabvar'>
-              
-            <nav className="navbar navbar-expand-lg bg-body-tertiary py-0 text-center" >
-                <div className="container-fluid">
-
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse container-links-navbar" id="navbarNavDropdown">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <NavLink className="nav-link" aria-current="page" to={"/"}>Inicio</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink to={"/acerca-de"} className="nav-link">Acerca De</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink to={"/portfolio"} className="nav-link">Portfolio</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink to={"/contacto"} className="nav-link">Contacto</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            
-        </div>
-    )
+        <Navbar collapseOnSelect expand="lg" className="bg-dark-subtle ">
+          <Container>
+            <Navbar.Brand style={{marginRight: '100px'}} href="/">World Digital Design</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav " />
+            <Navbar.Collapse id="responsive-navbar-nav ">
+              <Nav className="me-auto">
+                <NavLink className="nav-link d-flex justify-content-center" aria-current="page" to={"/"}>Inicio</NavLink>
+                <NavLink to={"/acerca-de"} className="nav-link d-flex justify-content-center">Acerca De</NavLink>
+                <NavLink to={"/portfolio"} className="nav-link d-flex justify-content-center">Portfolio</NavLink>
+                <NavLink to={"/contacto"} className="nav-link d-flex justify-content-center">Contacto</NavLink>
+              </Nav>
+              <Nav>
+                <Nav.Link className='d-flex justify-content-center' href="#deets">Instagram</Nav.Link>
+                <Nav.Link className='d-flex justify-content-center' href="#memes">Facebook</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      );
 }
