@@ -1,11 +1,54 @@
-.container-banner-home{
+.container-banner-home {
     width: 100%;
     height: 92vh;
     position: relative;
-    
+
 }
+
 .container-banner-home img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+}
+
+.container-text-inside-bannerContainer {
+    position: absolute;
+    max-width: 600px;
+    left: 0;
+    padding: 20px;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container-text-inside-bannerContainer h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+
+.container-text-inside-bannerContainer p {
+    font-size: 20px;
+}
+
+.container-box-recomendation {
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+}
+
+@media only screen and (max-width: 480px) {
+    .container-text-inside-bannerContainer h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .container-text-inside-bannerContainer p {
+        font-size: 15px;
+    }
 }
