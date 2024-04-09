@@ -15,7 +15,7 @@
 .container-text-inside-bannerContainer {
     position: absolute;
     max-width: 600px;
-    left: 0;
+    left: 5%;
     padding: 20px;
     top: 100px;
     background: rgba(255, 255, 255, 0.25);
@@ -36,10 +36,95 @@
     font-size: 20px;
 }
 
-.container-box-recomendation {
+.container-introduccion-CEO {
     width: 100%;
-    height: 600px;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container-introduccion-CEO p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.container-box-seoRecomendation {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container-box-seoRecomendation img {
+    max-width: 700px;
+    height: 85%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    position: absolute;
+}
+
+.container-text-inside-seoRecomendation {
+    position: absolute;
+    max-width: 600px;
+    right: 5%;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .container-text-inside-seoRecomendation {
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+    .container-introduccion-CEO p{
+        font-size: 15px;
+    }
+    .container-introduccion-CEO h1{
+        font-size: 20px;
+    }
+
+
+    .container-text-inside-bannerContainer {
+        left: 0;
+    }
+
+    .container-text-inside-seoRecomendation {
+        right: 0;
+    }
+    .container-text-inside-seoRecomendation li{
+        font-size: 15px;
+    }
+    .container-text-inside-seoRecomendation h4{
+        font-size: 15px;
+    }
+    .container-box-seoRecomendation img {
+        width: 100%;       
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -50,5 +135,18 @@
 
     .container-text-inside-bannerContainer p {
         font-size: 15px;
+    }
+    .container-banner-home {
+        height: 70vh;
+
+    }
+    .container-banner-home img {
+        object-fit: cover;
+    }
+    .container-introduccion-CEO {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
