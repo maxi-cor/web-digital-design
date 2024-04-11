@@ -2,11 +2,13 @@ import Navbrowser from "../../components/Navbrowser/Navbrowser";
 import './Home.css'
 import bannerHome from '../../assets/bannerHome.jpeg';
 import seoPic from '../../assets/seoPic.png';
+import woman from '../../assets/woman.png';
+import responsivo from '../../assets/responsive2.png'
 
 export default function Home() {
     return (
         <div className="container_home">
-            <Navbrowser/>
+            <Navbrowser />
             <div className="container-banner-home">
                 <img src={bannerHome} alt="banner de inicio" />
                 <div className="container-text-inside-bannerContainer">
@@ -16,9 +18,10 @@ export default function Home() {
                 </div>
             </div>
             <div className="container-introduccion-CEO">
-                <h1>En un mundo cada vez más digitalizado, tu presencia en línea es tu carta de presentación.</h1>
+                <h2>En un mundo cada vez más digitalizado, tu presencia en línea es tu carta de presentación.</h2>
                 <p>En Worl Digital Design, entendemos la importancia de destacar entre la multitud. Nuestro equipo de expertos en desarrollo web está aquí para convertir tu visión en una realidad digital impactante, mientras nos enfocamos en optimizar tu sitio para alcanzar los primeros puestos en los motores de búsqueda.</p>
             </div>
+
             <div className="container-box-seoRecomendation">
                 <img src={seoPic} alt="searching engine" />
                 <div className="container-text-inside-seoRecomendation">
@@ -41,6 +44,43 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
+
+            <div className="container-introduccion-responsive">
+                <div className="responsive-firstBlock respoBlock">
+                    <h3>Porque nos adaptamos a los diferentes estilos de nuestros clientes.</h3>
+                    <p>Y sabemos la importancia que esto representa en tu marca.</p>
+                </div>
+                <img src={woman} alt=""/> 
+                <div className="responsive-secondBlock respoBlock">
+                    <h3>Creamos diseños que reflejan la identidad única de tu empresa.</h3>
+                    <p>Para conectar con tu audiencia, y convertir esa visita en un cliente.</p>
+                </div>
+            </div>
+
+            <div className="container-box-seoRecomendation">
+                <img src={responsivo} alt="searching engine" />
+                <div className="container-text-inside-seoRecomendation">
+                    <h4>UX/UI and Responsive design:</h4>
+                    <ul>
+                        <li>Nuestro equipo creativo fusiona la estética y la funcionalidad para ofrecer soluciones visuales innovadoras y atractivas.</li>
+                        <li>Utilizamos principios de diseño centrados en el usuario para crear interfaces fluidas y eficientes que cumplen con tus objetivos comerciales.</li>
+                    </ul>
+
+                    <h4>Maquetado en 3D:</h4>
+                    <ul>
+                        <li>Convertimos tus ideas en imágenes realistas y detalladas, dando vida a tus proyectos de manera virtual.</li>
+                        <li>Creamos representaciones tridimensionales precisas de productos, espacios o conceptos, permitiéndote visualizarlos de forma impactante.</li>
+                    </ul>
+
+                    <h4>Tecnolgias:</h4>
+                    <ul>
+                        <li>Interactúamos con las últimas tecnologías, desde IA para generar visualmente el mejor producto hasta la adopción de nuevas tecnologías para mejorar el rendimiento.</li>
+                        <li>Incorporamos soluciones tecnológicas innovadoras que impulsan la eficiencia y la efectividad de nuestros sitios, manteniéndonos a la vanguardia en el panorama digital.</li>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
     )
 }
