@@ -1,2 +1,12 @@
+.nav-link {
+    color: rgb(181, 171, 171);
+}
 
+.active {
+    color: white !important;
+}
 
+.nav-link:hover {
+    color: white;
+    /*will change color of text within the element on hover */
+}
