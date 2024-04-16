@@ -1,35 +1,38 @@
 .container-banner-home {
     width: 100%;
     height: 92vh;
-    position: relative;
-
+    background-image: url('../../assets/bannerDesignDsk.jpeg');
+    background-size: cover;
+    display: flex;
+    
+    
 }
-
-.container-banner-home img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
+@media only screen and (max-width: 900px) {
+    .container-banner-home {
+    background-image: url('../../assets/bannerDesignMov.jpeg');
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+}
+@media only screen and (min-width: 901px) {
+    .container-text-inside-bannerContainer {
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+    .container-text-inside-bannerContainer h1 {
+        margin-bottom: 20px;
+    }
 }
 
 .container-text-inside-bannerContainer {
-    position: absolute;
-    max-width: 600px;
-    left: 5%;
+    color: white;
+    max-width: 700px;
     padding: 20px;
-    top: 100px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .container-text-inside-bannerContainer h1 {
     font-size: 60px;
-    margin-bottom: 30px;
-
 }
 
 .container-text-inside-bannerContainer p {
@@ -64,23 +67,43 @@
 .container-box-seoRecomendation {
     width: 100%;
     min-height: 100vh;
+    background-color: #F7F7F7;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    overflow: hidden;
 }
-
-.container-box-seoRecomendation img {
-    max-width: 700px;
-    height: auto;
+.container-box-seoRecomendation img { 
+    height: 900px;
+    max-width: 900px;
     object-fit: cover;
+    position: absolute;
+    left: 0;
 }
 
+@media only screen and (min-width: 1000px) {  
+    .container-text-inside-seoRecomendation {
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .container-box-seoRecomendation {
+        align-items: center;
+        justify-content: center;
+    }
+    .container-text-inside-seoRecomendation {
+        position: relative;
+    }
+    .container-box-seoRecomendation img { 
+        filter: blur(5px);
+        opacity: 0.7;
+    }
+}
 .container-text-inside-seoRecomendation {
     max-width: 600px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -124,20 +147,30 @@
 
 }
 
-@media (max-width: 1290px) {
-    .container-box-seoRecomendation img {
-        max-width: 100%;
-        max-height: 400px;
-        object-fit: contain;
-    }
+.container-box-designRecomendation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container-text-inside-designRecomendation{
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-box-designRecomendation img { 
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+    
 }
 
 @media (max-width: 1240px) {
-
     .responsive-secondBlock {
         order: 2;
     }
-
     .container-introduccion-responsive img {
         order: 3;
     }
@@ -145,49 +178,40 @@
 
 
 @media only screen and (max-width: 660px) {
-
     .container-introduccion-CEO p {
         font-size: 15px;
     }
-
     .container-introduccion-CEO h1 {
         font-size: 20px;
     }
-
-    .container-text-inside-seoRecomendation li {
+    .container-text-inside-seoRecomendation li, .container-text-inside-designRecomendation li {
         font-size: 15px;
     }
-
-    .container-text-inside-seoRecomendation h4 {
+    .container-text-inside-seoRecomendation h4, .container-text-inside-designRecomendation h4 {
         font-size: 15px;
     }
-
-    .container-box-seoRecomendation img {
+    .container-box-designRecomendation img { 
+        height: 310px;
         width: 100%;
+        object-fit: contain;
     }
-
-
+    
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
     .container-text-inside-bannerContainer h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
-
     .container-text-inside-bannerContainer p {
         font-size: 15px;
     }
-
     .container-banner-home {
         height: 70vh;
-
     }
-
     .container-banner-home img {
         object-fit: cover;
     }
-
     .container-introduccion-CEO {
         padding-left: 10%;
         padding-right: 10%;

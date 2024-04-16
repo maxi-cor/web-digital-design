@@ -1,7 +1,6 @@
 import Navbrowser from "../../components/Navbrowser/Navbrowser";
 import './Home.css'
-import bannerHome from '../../assets/bannerHome.jpeg';
-import seoPic from '../../assets/seoPic.png';
+import seoPic from '../../assets/seoPic.jpeg';
 import woman from '../../assets/woman.png';
 import responsivo from '../../assets/responsive2.png'
 
@@ -10,20 +9,21 @@ export default function Home() {
         <div className="container_home">
             <Navbrowser />
             <div className="container-banner-home">
-                <img src={bannerHome} alt="banner de inicio" />
+                
                 <div className="container-text-inside-bannerContainer">
                     <h1>Transforma tu visión en realidad digital.</h1>
                     <p>Convertimos ideas en experiencias digitales impactantes. Te ayudaremos a destacarte en línea y alcanzar tus objetivos.</p>
                     <p>Descubre cómo podemos ayudarte a llevar tu presencia en línea al siguiente nivel.</p>
                 </div>
             </div>
+
             <div className="container-introduccion-CEO">
                 <h2>En un mundo cada vez más digitalizado, tu presencia en línea es tu carta de presentación.</h2>
                 <p>En Worl Digital Design, entendemos la importancia de destacar entre la multitud. Nuestro equipo de expertos en desarrollo web está aquí para convertir tu visión en una realidad digital impactante, mientras nos enfocamos en optimizar tu sitio para alcanzar los primeros puestos en los motores de búsqueda.</p>
             </div>
 
             <div className="container-box-seoRecomendation">
-                <img src={seoPic} alt="searching engine" />
+                <img src={seoPic}  alt=""/>
                 <div className="container-text-inside-seoRecomendation">
                     <h4>Optimización de Motores de Búsqueda (SEO):</h4>
                     <ul>
@@ -57,9 +57,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container-box-seoRecomendation">
+            <div className="container-box-designRecomendation">
                 <img src={responsivo} alt="searching engine" />
-                <div className="container-text-inside-seoRecomendation">
+                <div className="container-text-inside-designRecomendation">
                     <h4>UX/UI and Responsive design:</h4>
                     <ul>
                         <li>Nuestro equipo creativo fusiona la estética y la funcionalidad para ofrecer soluciones visuales innovadoras y atractivas.</li>
