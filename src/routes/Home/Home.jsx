@@ -5,6 +5,9 @@ import woman from '../../assets/woman.png';
 import responsivo from '../../assets/responsive2.png'
 
 export default function Home() {
+
+    console.log('esto es una prueba de conexion entre cuentas github')
+
     return (
         <div className="container_home">
             <Navbrowser />
